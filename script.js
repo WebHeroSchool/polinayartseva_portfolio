@@ -10,10 +10,10 @@ const sticky = nav.offsetTop;
 function checkMarginToTop() {
     if (window.pageYOffset > sticky) {
         nav.classList.add("sticky");
-        menuLink.classList.add("menu__link-white");
+        //menuLink.classList.add("menu__link-white");
     } else {
         nav.classList.remove("sticky");
-        menuLink.classList.remove("menu__link-white");
+        //menuLink.classList.remove("menu__link-white");
     }
 }
 
