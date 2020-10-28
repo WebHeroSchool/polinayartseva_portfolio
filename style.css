@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'GothamPro', 'Gilroy', serif;
+  font-family: 'Gilroy', 'Montserrat', serif;
 }
 
 .header {
@@ -41,6 +41,8 @@
   top: 0;
   z-index: 1;
   transition: background ease 1s;
+  padding-left: 17.5%;
+  padding-right: 17.5%;
 }
 
 .menu__link-white {
