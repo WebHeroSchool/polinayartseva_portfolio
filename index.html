@@ -5,7 +5,7 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Portfolio | Polina Yartseva | Web designer & Frontend developer</title>
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="./media.css">
+	<link rel="stylesheet" href="./fonts/fonts.css">
 </head>
 <body>
 	<header class="header" id="header">
@@ -16,6 +16,21 @@
 			<a href="#portfolio" class="menu__link">portfolio</a>
 			<a href="#contacts" class="menu__link">contacts</a>
 		</nav>
+		<nav class="mobile-menu">
+			<input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+			<label for="checkbox" class="mobile-menu__btn">
+				<div class="mobile-menu__icon"></div>
+			</label>
+			<div class="mobile-menu__container">
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__item"><a href="#header" class="mobile-menu__link">home</a></li>
+					<li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">about</a></li>
+					<li class="mobile-menu__item"><a href="#skills" class="mobile-menu__link">skills</a></li>
+					<li class="mobile-menu__item"><a href="#portfolio" class="mobile-menu__link">portfolio</a></li>
+					<li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">contacts</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div class="header__image">
 			<h1 class="header__title">polina<br>yartseva</h1>
 			<img src="img/header-img.jpg" alt="Polina Yartseva" class="image">
@@ -24,7 +39,7 @@
 	<main class="about" id="about">
 		<h2 class="title">about me</h2>
 		<div class="about__text">
-			<p class="text">Hi, I'm Polina – Frontend developer, Graphic and Web designer.</p>
+			<p class="text">Hi, I'm Polina – Graphic/Web designer and Frontend developer.</p>
 			<p class="text">I'm a very passionate person about coding and web industry in general. <br>I'm proactive and organized person, with a high sense of responsibility, self-motivated and committed to the success. </p>
 			<p class="text">Ready to implement excellent projects with wonderful people.</p>
 		</div>

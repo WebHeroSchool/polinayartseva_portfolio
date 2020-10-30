@@ -21,29 +21,10 @@ function checkMarginToTop() {
     }
 }
 
-//const header = document.getElementById("header");
+document.addEventListener('DOMContentLoaded', function(){
+    const mobileMenuLinks = document.querySelectorAll.bind("mobile-menu__link");
 
-let screenWidth;
-
-window.onLoad = function(){
-    // Теперь мы знаем актуальную ширину экрана
-    let screenWidth = parseInt(window.getComputedStyle(document.screen, null)
-        .getPropertyValue('width'), 10);
-
-    menuSwitch();
-
-    window.resize = function () {
-        // Обновляем ширину экрана
-        screenWidth = parseInt(window.getComputedStyle(document.screen, null)
-            .getPropertyValue('width'), 10);
-        menuSwitch();
-    };
-};
-
-function menuSwitch() {
-    if (screenWidth <= 768) {
-        nav.classList.toggle("burger__menu");
-    } else {
-        nav.classList.toggle("header__menu");
-    }
-}
+    mobileMenuLinks("mobile-menu ul").onclick('click', () => {
+        mobileMenuLinks("mobile-menu ul").forEach(el => el.classList.toggle("noshow"));
+    })
+});
