@@ -21,10 +21,10 @@ function checkMarginToTop() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function(){
-    const mobileMenuLinks = document.querySelectorAll.bind("mobile-menu__link");
+const menuLinks = document.querySelectorAll('.mobile-menu__link');
 
-    mobileMenuLinks("mobile-menu ul").onclick('click', () => {
-        mobileMenuLinks("mobile-menu ul").forEach(el => el.classList.toggle("noshow"));
-    })
+menuLinks.forEach(linkButton => {
+    linkButton.onclick = function() {
+        menuLinks.forEach(linkButton => linkButton.classList.toggle('noshow'))
+    };
 });
