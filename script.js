@@ -22,9 +22,12 @@ function checkMarginToTop() {
 }
 
 const menuLinks = document.querySelectorAll('.mobile-menu__link');
+const checkbox = document.getElementById('checkbox');
+
+checkbox.checked = false;
 
 menuLinks.forEach(linkButton => {
     linkButton.onclick = function() {
-        menuLinks.forEach(linkButton => linkButton.classList.toggle('noshow'))
+        checkbox.checked = false;
     };
 });
